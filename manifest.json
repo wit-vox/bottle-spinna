@@ -1,0 +1,21 @@
+{
+    "name": "Bottle Spinna",
+    "short_name": "Bottle Spinna",
+    "description": "Bottle Spinna App",
+   
+    "scope": "/bottle-spinna/",
+    "start_url": "/bottle-spinna/",
+   
+    "background_color": "rgb(253, 255, 254)",
+    "theme_color": "rgb(253, 255, 254)",
+   
+    "display": "fullscreen", 
+   
+    "icons": [
+        {
+          "src": "/bottle-spinna/bottle.png",
+          "type": "image/png",
+          "sizes": "700x700"
+        }
+    ]
+}
