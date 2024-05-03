@@ -16,7 +16,55 @@ The project contains three main files:
 
 ### PWA specific files
 - sw.js: Service workers facilitate offline caching and enable background synchronization, enhancing the functionality of PWAs.
+```
+var GHPATH = '/bottle-spinna';
+
+var APP_PREFIX = 'bs_';
+ 
+var VERSION = 'version_00';
+ 
+var URLS = [    
+  `${GHPATH}/`,
+  `${GHPATH}/bottle.png`,
+  `${GHPATH}/index.html`,
+  `${GHPATH}/styles.css`,
+  `${GHPATH}/script.js`
+ ]
+```
 - manifest.json: The JSON file that contains essential metadata for a PWA, allowing it to offer an installable and app-like experience.
+```
+{
+    "name": "Bottle Spinna",
+    "short_name": "Bottle Spinna",
+    "description": "Bottle Spinna App",
+   
+    "scope": "/bottle-spinna/",
+    "start_url": "/bottle-spinna/",
+   
+    "background_color": "rgb(253, 255, 254)",
+    "theme_color": "rgb(253, 255, 254)",
+   
+    "display": "fullscreen", 
+   
+    "icons": [
+        {
+          "src": "/bottle-spinna/bottle.png",
+          "type": "image/png",
+          "sizes": "700x700"
+        }
+    ]
+}
+```
+- in the index.html you must include references to the `manifest.json` and `sw.js`:
+```
+...in the <head>
+<link rel="manifest" href="/bottle-spinna/manifest.json">
+
+...at the end of <body> or in your script.js
+<script>
+    if (navigator.serviceWorker) navigator.serviceWorker.register ('/bottle-spinna/sw.js',{scope: '/bdazz/'})
+</script>
+```
 
 ## Related Projects
 Check out also [this repo](https://github.com/codepo8/github-page-pwa) which outlines how to build a GitHub page-based Progressive Web App (PWA).
