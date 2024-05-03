@@ -1,6 +1,6 @@
 var GHPATH = '/bottle-spinna';
 
-var APP_PREFIX = 'rnp_';
+var APP_PREFIX = 'bs_';
  
 var VERSION = 'version_00';
  
