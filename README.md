@@ -4,7 +4,7 @@ This project is a simple web-based "Spin the Bottle" app. It's designed for casu
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Live Demo
-You can try out the app [here](https://wit-vox.github.io/bottle-spinna/).
+You can try out the app [here](https://wit-vox.github.io/bottle-spinna/) and video [here](https://www.youtube.com/shorts/nze9e_QgjJg).
 
 ## Project Structure
 The project contains three main files:
